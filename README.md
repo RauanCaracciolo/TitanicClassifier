@@ -53,4 +53,4 @@
 
 ![image](https://github.com/user-attachments/assets/34395fdd-2020-42ba-8d02-ca5f6e2fdb2f)
 
-<h6>💭 🤔 For the curious, in this specific project, i get the train and thest sets already separeted, but in most sets you will find, you will need to separate them. The standart is giving 80% from the set to train and 20% of the set to test. This is important because you will present new information to the model and compare the resposes they give to the anserws you expect them to predict.</h6>
+<h6>💭 🤔 For the curious, in this specific project, i get the train and test sets already separeted, but in most sets you find, you will need to separate them. The standart is giving 80% from the set to train and 20% of the set to test. This is important because you need to present new information to the model and compare the resposes they give to the anserws you expect to evaluate it.</h6>
