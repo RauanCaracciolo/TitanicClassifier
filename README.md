@@ -1,5 +1,5 @@
 <h1>Titanic Machine Learning Projetct</h1>
-<h2>Developed using diverses python libraries, such as Pandas, MatPlotLib and mainly Scikit-Learn. <br>
+<h2>Developed using diverses python libraries, such as Pandas, MatPlotLib and mainly scikit-learn. <br>
 <img src="https://pandas.pydata.org/static/img/pandas_mark.svg" alt="Pandas" height="40"/>
 <img src="https://matplotlib.org/_static/images/logo2.svg" alt="Matplotlib" height="40"/>
 <img src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" alt="scikit-learn" height="40"/></h2>
