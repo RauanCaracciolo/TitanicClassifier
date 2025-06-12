@@ -1,8 +1,8 @@
 <h1>Titanic Machine Learning Projetct</h1>
-<h2>Developed using diverses python libraries, such as Pandas, MatPlotLib and mainly Scikit-learn </h2>
-<p><img src="https://pandas.pydata.org/static/img/pandas_mark.svg" alt="Pandas" height="40"/>
+<h2>Developed using diverses python libraries, such as Pandas, MatPlotLib and mainly Scikit-Learn. <br>
+<img src="https://pandas.pydata.org/static/img/pandas_mark.svg" alt="Pandas" height="40"/>
 <img src="https://matplotlib.org/_static/images/logo2.svg" alt="Matplotlib" height="40"/>
-<img src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" alt="scikit-learn" height="40"/></p>
+<img src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" alt="scikit-learn" height="40"/></h2>
 
 <h5>This project aim to process the classic Titanic passangers to make it usable to Binary Classification models to evaluate and compare them.</h5>
 <h2>Processing the data</h2>
