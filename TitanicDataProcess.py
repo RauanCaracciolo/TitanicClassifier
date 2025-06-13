@@ -6,10 +6,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 titanic_df = pd.read_csv('datasets/titanic_train.csv')
-titanic_test = pd.read_csv('datasets/titanic_test.csv')
 #Removing useless data
 titanic_df.drop(['PassengerId', 'Name', 'Ticket', 'Cabin'], axis=1, inplace=True)
-titanic_test.drop(['PassengerId', 'Name', 'Ticket', 'Cabin'], axis=1, inplace=True)
 
 # Printing  all the null apears of each roll
 # print(titanic_df[titanic_df.isnull().any(axis=1)].count())
@@ -25,7 +23,6 @@ titanic_test.drop(['PassengerId', 'Name', 'Ticket', 'Cabin'], axis=1, inplace=Tr
 
 #Drop all data that is missing info
 titanic_df = titanic_df.dropna()
-titanic_test = titanic_test.dropna()
 
 #Quick Statistic overview
 #print(titanic_df.describe())
@@ -53,13 +50,9 @@ titanic_test = titanic_test.dropna()
 label_enconding = preprocessing.LabelEncoder() #Convert categorical values to ordered integer values to use in ML algorithms
 
 titanic_df['Sex'] = label_enconding.fit_transform(titanic_df['Sex'].astype(str)) #Convert sex into 0 or 1
-titanic_test['Sex'] = label_enconding.fit_transform(titanic_test['Sex'].astype(str)) #Convert sex into 0 or 1
 
 titanic_df = pd.get_dummies(titanic_df, columns=['Embarked'], dtype=int)#Categorical values with no intrinsic order can be converted to numeric values using one-hot encoding, transform into false or true and separates into different columns
-titanic_test = pd.get_dummies(titanic_test, columns=['Embarked'], dtype=int)#Categorical values with no intrinsic order can be converted to numeric values using one-hot encoding, transform into false or true and separates into different columns
 
 titanic_df = titanic_df.sample(frac=1).reset_index(drop=True) #Shufle the data
-titanic_test = titanic_test.sample(frac=1).reset_index(drop=True) #Shufle the data
 
 titanic_df.to_csv('datasets/titanic_processed_train.csv', index=False) #create the archive of the ready to use datasets
-titanic_test.to_csv('datasets/titanic_processed_test.csv', index=False) #create the archive of the ready to use datasets
