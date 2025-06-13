@@ -47,10 +47,8 @@
 
 ![image](https://github.com/user-attachments/assets/ab01d338-285b-4cd8-86b6-e6243d101568)
 
-<h5>Finally, for good measures, we will suflle the data and the dataset is ready to be used. Remeber to treat the train set and the test set!</h5>
+<h5>Finally, for good measures, we will suflle the data and the dataset is ready to be used.</h5>
 
 <h4>Shuffled set.</h4>
 
 ![image](https://github.com/user-attachments/assets/34395fdd-2020-42ba-8d02-ca5f6e2fdb2f)
-
-<h6>💭 🤔 For the curious, in this specific project, i get the train and test sets already separeted, but in most sets you find, you will need to separate them. The standart is giving 80% from the set to train and 20% of the set to test. This is important because you need to present new information to the model and compare the resposes they give to the anserws you expect to evaluate it.</h6>
