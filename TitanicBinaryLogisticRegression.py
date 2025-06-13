@@ -28,15 +28,15 @@ acc = accuracy_score(y_test, y_test_pred) #How many guesses the model make it ri
 prec = precision_score(y_test, y_test_pred) #How many the passengers that the model thought survived actually survived
 recall = recall_score(y_test, y_test_pred)#How of the actual survivors did the model correctly predict
 
-print("Accuracy_score :", acc)
-print("Precision_score: ",prec)
-print("Recall_score: ", recall)
 #Print the plot of the confustion matrix
 cm = confusion_matrix(y_test, y_test_pred)
 disp = ConfusionMatrixDisplay(confusion_matrix=cm)
 disp.plot()
 plt.title('Confusion Matrix')
-#plt.show()
+#Add the metrics to the plot
+metrics_text = f'Accuracy: {acc:.2f}\nPrecision: {prec:.2f}\nRecall: {recall:.2f}'
+plt.gcf().text(0.7, 0.01, metrics_text, fontsize=12, ha='left')  # gcf = get current figure
+plt.show()
 
 
 
