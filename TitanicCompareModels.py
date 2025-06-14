@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, precision_score, recall_score
@@ -68,7 +67,12 @@ def compare_results():
 def logistic_fn(x_train, y_train):
     model = LogisticRegression(solver='liblinear')
     model.fit(x_train, y_train)
-
     return model
+def linearDiscrAna_fn(x_train, y_train):
+    model = LinearDiscriminantAnalysis()
+    model.fit(x_train, y_train)
+    return model
+
 result_dict['survived ~ logistic'] = build_model(logistic_fn, 'Survived', FEATURES, titanic_df)
+result_dict['survived ~ linear discriminant analysis'] = build_model(linearDiscrAna_fn, 'Survived', FEATURES, titanic_df)
 compare_results()
