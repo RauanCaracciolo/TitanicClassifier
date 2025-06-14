@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-titanic_df = pd.read_csv('datasets/titanic_train.csv')
+titanic_df = pd.read_csv('../datasets/titanic_train.csv')
 #Removing useless data
 titanic_df.drop(['PassengerId', 'Name', 'Ticket', 'Cabin'], axis=1, inplace=True)
 
