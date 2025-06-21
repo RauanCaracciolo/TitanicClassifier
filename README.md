@@ -52,3 +52,12 @@
 <h4>Shuffled set.</h4>
 
 ![image](https://github.com/user-attachments/assets/34395fdd-2020-42ba-8d02-ca5f6e2fdb2f)
+
+<h2>Evaluate and compare the models.</h2>
+
+![Result](https://github.com/user-attachments/assets/29e8faf9-b7cc-4733-9a64-e0c9a69d6c72)
+
+<h5><b>Accuracy:</b> How much is the model correct overall.</h5>
+<h5><b>Precision:</b> How often the model predicting the target class.</h5>
+<h5><b>Recall:</b> How % the model predict correct of the class.</h5>
+
